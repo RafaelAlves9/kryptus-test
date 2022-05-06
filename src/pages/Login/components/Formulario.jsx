@@ -17,8 +17,8 @@ export const Formulario = () => {
     //direcionamento para página Filmes
     const navigate = useNavigate()
     //conta de acesso (protegida)
-    const usuario = process.env.REACT_APP_USUARIO_LOGIN;
-    const senha = process.env.REACT_APP_SENHA_LOGIN;
+    const usuario = REACT_APP_USUARIO_LOGIN;
+    const senha = REACT_APP_SENHA_LOGIN;
     //validação dos inputs
     function checkForm(e){
         e.preventDefault()
