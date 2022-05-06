@@ -1,9 +1,9 @@
 import { Formulario } from './components/Formulario';
 import { ContentHome } from './styled';
 import { Container } from '@mui/material';
-import { Section } from '../../components/GlobalStyled'
+import { Section } from '../../components/GlobalStyled';
 
-import StartWars from '../../components/images/logo.webp'
+import StartWars from '../../components/src/logo.png'
 
 export const Login = () => {
 

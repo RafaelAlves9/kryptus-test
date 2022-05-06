@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FormContainer, TitlleForm, InputForm, Button } from './StyledForm';
-import { useAuth } from '../../../components/useContext';
+import { useAuth } from '../../../services/useContext';
 import { Alert } from '@mui/material';
 
 export const Formulario = () => {
@@ -15,9 +15,9 @@ export const Formulario = () => {
     //estado global do login
     const {setSigned} = useAuth()
     const navigate = useNavigate()
-
-    const usuario = "admin";
-    const senha = "admin123!";
+    //conta de acesso (protegida)
+    const usuario = process.env.REACT_APP_USUARIO_LOGIN;
+    const senha = process.env.REACT_APP_SENHA_LOGIN;
 
     //validação dos inputs
     function checkForm(e){
@@ -39,7 +39,7 @@ export const Formulario = () => {
     
     return(
         <FormContainer>
-            <TitlleForm>Faça o Login</TitlleForm>
+            <TitlleForm>Faça o login</TitlleForm>
             <form onSubmit={getAcess()}>
                 <InputForm name='user' type='text' placeholder='Usuário' value={userValue} onChange={(e) => setUserValue(e.target.value)} />
                 {errorUser && (<Alert sx={{ p:'0 30px' }} variant="filled" severity="error">Usuário não encontrado</Alert>)}
