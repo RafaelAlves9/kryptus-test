@@ -14,11 +14,11 @@ export const Formulario = () => {
     const [errorPassword, setErrorPassword] = useState(null);
     //estado global do login
     const {setSigned} = useAuth()
+    //direcionamento para página Filmes
     const navigate = useNavigate()
     //conta de acesso (protegida)
     const usuario = process.env.REACT_APP_USUARIO_LOGIN;
     const senha = process.env.REACT_APP_SENHA_LOGIN;
-
     //validação dos inputs
     function checkForm(e){
         e.preventDefault()
