@@ -37,7 +37,7 @@ export default function ModalDialog(props) {
                     id="panel1a-header"
                     sx={{backgroundColor:'var(--color-3)'}}
                   >
-                  <Typography><S.TituloInfo>Sinopse:</S.TituloInfo></Typography>
+                  <Typography><S.TituloInfo>Sinopse</S.TituloInfo></Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography>
@@ -53,7 +53,7 @@ export default function ModalDialog(props) {
                     id="panel1a-header"
                     sx={{backgroundColor:'var(--color-3)'}}
                   >
-                  <Typography><S.TituloInfo>Ano:</S.TituloInfo></Typography>
+                  <Typography><S.TituloInfo>Ano</S.TituloInfo></Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography>
@@ -69,7 +69,7 @@ export default function ModalDialog(props) {
                     id="panel1a-header"
                     sx={{backgroundColor:'var(--color-3)'}}
                   >
-                  <Typography><S.TituloInfo>Direção:</S.TituloInfo></Typography>
+                  <Typography><S.TituloInfo>Direção</S.TituloInfo></Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography>
@@ -85,7 +85,7 @@ export default function ModalDialog(props) {
                     id="panel1a-header"
                     sx={{backgroundColor:'var(--color-3)'}}
                   >
-                  <Typography><S.TituloInfo>Produção:</S.TituloInfo></Typography>
+                  <Typography><S.TituloInfo>Produção</S.TituloInfo></Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography>
