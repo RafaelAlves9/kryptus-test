@@ -10,4 +10,9 @@
 - O site está 100% responsivo.
 - Separei o projeto por pastas estratégicas, agrupando componentes de valor semelhantes em cada uma.
 
-## a
+## Acesso de Login
+- Usuário: "admin"
+- Senha: "admin123!"
+
+## Rodando o projeto
+- Antes de tudo, instale as dependências do projeto (npm install) para poder rodar-lo (npm start).
