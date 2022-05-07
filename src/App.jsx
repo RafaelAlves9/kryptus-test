@@ -6,7 +6,7 @@ import { AuthProvider } from './services/Context';
 
 //condição de acesso pelo login
 const Private = ({Item, Item2}) => {
-  const login = localStorage.getItem("user", "loged")
+  const login = localStorage.getItem("user")
   return login ? <Item /> : <Item2 />
 }
 
