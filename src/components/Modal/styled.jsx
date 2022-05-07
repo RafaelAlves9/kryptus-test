@@ -13,6 +13,6 @@ export const Titulo = styled.p`
 export const TituloInfo = styled.p`
     padding-right: 5px;
     font-weight: 700;
-    color: var(--color-4);
+    color: var(--color-5);
     font-family: var(--font-1);
 `
