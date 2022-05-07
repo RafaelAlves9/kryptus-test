@@ -37,7 +37,8 @@ export const Section = styled.section`
     text-align: center;
 
     @media(max-width:900px){
-       height: fit-content;
-       min-height: 100vh;
+        height: fit-content;
+        min-height: 100vh;
+        align-items: flex-start;
     }
 `
