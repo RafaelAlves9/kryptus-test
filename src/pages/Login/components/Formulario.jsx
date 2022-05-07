@@ -11,6 +11,7 @@ export const Formulario = () => {
     const [passwordValue, setPasswordValue] = useState("");
     //estado de erro dos inputs
     const [errorForm, setErrorForm] = useState(null);
+    
     //estado global do login
     const {setSigned} = useAuth()
     //direcionamento para página Filmes
