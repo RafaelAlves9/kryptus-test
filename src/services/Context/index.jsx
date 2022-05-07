@@ -6,8 +6,8 @@ export const AuthProvider = ({children}) => {
     const [signed, setSigned] = useState(false)
 
     useEffect(()=> {
-        if (localStorage.getItem("user", "loged")){
-            localStorage.removeItem("user", "loged")
+        if (localStorage.getItem("user")){
+            localStorage.removeItem("user")
         } else localStorage.setItem("user", "loged")
     }, [signed])
 

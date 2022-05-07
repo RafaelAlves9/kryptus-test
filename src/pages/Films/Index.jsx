@@ -9,15 +9,13 @@ export const Films = () => {
     const [api, setApi] = useState();
 
     useEffect(() => {
-        setApi(JSON.parse(localStorage.getItem("api")))
         if(!localStorage.getItem("api")){
             axios.get('https://swapi.dev/api/films')
             .then(res => {
                 localStorage.setItem("api", JSON.stringify(res.data.results))
                 setApi(JSON.parse(localStorage.getItem("api")))
             })
-        } else return
-        
+        } else setApi(JSON.parse(localStorage?.getItem("api")))
     }, [])
 
     return (
