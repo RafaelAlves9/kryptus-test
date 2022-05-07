@@ -9,7 +9,7 @@ export const ContentHome = styled.section`
     align-items: center;
 
     img{
-        margin: 20px 0;
+        margin: 10px 0;
         max-width: 450px;
     }
 
