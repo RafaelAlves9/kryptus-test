@@ -7,7 +7,7 @@ export const AuthProvider = ({children}) => {
 
     useEffect(()=> {
         if (localStorage.getItem("user")){
-            localStorage.removeItem("user", "loged")
+            return
         } else localStorage.setItem("user", "loged")
     }, [signed])
 
