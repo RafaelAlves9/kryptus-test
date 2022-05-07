@@ -41,6 +41,5 @@ export const Section = styled.section`
     @media(max-width:900px){
         height: fit-content;
         min-height: 100vh;
-        align-items: flex-start;
     }
 `
