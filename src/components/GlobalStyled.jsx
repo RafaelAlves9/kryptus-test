@@ -13,6 +13,8 @@ export const GlobalStyle = createGlobalStyle`
         --color-1: #FCDE2A;
         --color-2: #DF1B1B;
         --color-3: #F2F2F2;
+        --color-4: #0C1C35;
+        --color-5: #192F58;
         --transparente: rgba(255, 255, 255, 0);
 
         --font-1: 'Roboto', sans-serif;
@@ -31,7 +33,7 @@ export const Section = styled.section`
     width: 100%;
     height: 100vh;
     color: #fff;
-    background: linear-gradient(to bottom right,#000 50%, var(--color-1) 170%);
+    background: linear-gradient(to right top, #000 20%, var(--color-4) 100%);
     display: flex;
     align-items: center;
     text-align: center;

@@ -35,7 +35,7 @@ export default function ModalDialog(props) {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    sx={{backgroundColor:'var(--color-3)'}}
+                    sx={{backgroundColor:'#fff'}}
                   >
                   <Typography><S.TituloInfo>Sinopse</S.TituloInfo></Typography>
                   </AccordionSummary>
@@ -51,7 +51,7 @@ export default function ModalDialog(props) {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    sx={{backgroundColor:'var(--color-3)'}}
+                    sx={{backgroundColor:'#fff'}}
                   >
                   <Typography><S.TituloInfo>Ano</S.TituloInfo></Typography>
                   </AccordionSummary>
@@ -67,7 +67,7 @@ export default function ModalDialog(props) {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    sx={{backgroundColor:'var(--color-3)'}}
+                    sx={{backgroundColor:'#fff'}}
                   >
                   <Typography><S.TituloInfo>Direção</S.TituloInfo></Typography>
                   </AccordionSummary>
@@ -83,7 +83,7 @@ export default function ModalDialog(props) {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
-                    sx={{backgroundColor:'var(--color-3)'}}
+                    sx={{backgroundColor:'#fff'}}
                   >
                   <Typography><S.TituloInfo>Produção</S.TituloInfo></Typography>
                   </AccordionSummary>
@@ -95,7 +95,7 @@ export default function ModalDialog(props) {
                 </Accordion>
                 </DialogContentText>
               <DialogActions>
-                <Button sx={{color:'#000'}} onClick={handleClose}>Fechar</Button>
+                <Button sx={{color:'var(--color-4)'}} onClick={handleClose}>Fechar</Button>
               </DialogActions>
             </DialogContent>
         </S.All>
