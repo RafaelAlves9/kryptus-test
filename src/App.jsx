@@ -15,8 +15,8 @@ function App() {
     <BrowserRouter>
       <AuthProvider>
         <Routes>
-        <Route path='/' exact element={<Login/>}/>
-          <Route path='/login'  element={<Login/>}/>
+        <Route path='/' exact element={<Private Item={Films} Item2={Login}/>}/>
+          <Route path='/login' element={<Private Item={Films} Item2={Login}/>}/>
           <Route path='/filmes' element={<Private Item={Films} Item2={NoAcess}/>}/>
           <Route path='*' element={<NoAcess />}/>
         </Routes>
