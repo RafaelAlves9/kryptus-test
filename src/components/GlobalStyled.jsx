@@ -29,8 +29,15 @@ export const GlobalStyle = createGlobalStyle`
 `
 export const Section = styled.section`
     width: 100%;
-    min-height: 100vh;
-    height: fit-content;
+    height: 100vh;
     color: #fff;
     background: linear-gradient(to bottom right,#000 50%, var(--color-1) 170%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    @media(max-width:900px){
+       height: fit-content;
+       min-height: 100vh;
+    }
 `

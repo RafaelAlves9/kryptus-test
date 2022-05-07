@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const ContentHome = styled.section`
     width: 100%;
     height: 100%;
-    padding: 50px 0;
     
     display: flex;
     justify-content: space-around;
@@ -15,10 +14,8 @@ export const ContentHome = styled.section`
     }
 
     @media(max-width:900px){
-        padding: 0 0;
-        flex-direction: column;
-        justify-content: start;
-
+       flex-direction: column;
+       justify-content: start;
         img{
             max-width: 120px;
         }

@@ -18,11 +18,10 @@ export const FormContainer = styled.h1`
     }
 `
 export const TitlleForm = styled.h1`
-    padding: 30px 0 50px 0;
+    padding: 30px 0 40px 0;
 `
 export const InputForm = styled.input`
-    width: 80%;
-    min-width: 280px;
+    width: 90%;
     height: 40px;
     margin: 7px 0;
     padding: 0 10px;
@@ -32,6 +31,7 @@ export const InputForm = styled.input`
     outline: none;
     background-color: #fff;
     transition: all ease-in-out .2s;
+    cursor: pointer;
 
     :focus{
         background-color: var(--color-3);
@@ -48,6 +48,7 @@ export const Button = styled.button`
     border-radius: 30px;
     color: #fff;
     font-weight: 700;
+    cursor: pointer;
 
     :hover{
         border: 2px solid #fff;

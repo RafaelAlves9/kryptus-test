@@ -9,32 +9,30 @@ export const Formulario = () => {
     //valores dos inputs
     const [userValue, setUserValue] = useState("");
     const [passwordValue, setPasswordValue] = useState("");
-    //estado dos erros dos inputs
-    const [errorUser, setErrorUser] = useState(null);
-    const [errorPassword, setErrorPassword] = useState(null);
+    //estado de erro dos inputs
+    const [errorForm, setErrorForm] = useState(null);
     //estado global do login
     const {setSigned} = useAuth()
     //direcionamento para página Filmes
     const navigate = useNavigate()
-    //conta de acesso (protegida)
-    const usuario = REACT_APP_USUARIO_LOGIN;
-    const senha = REACT_APP_SENHA_LOGIN;
+    //variáveis de ambiente
+    const usuario = "admin";
+    const senha = "admin123!";
     //validação dos inputs
     function checkForm(e){
         e.preventDefault()
-        if (userValue !== usuario) setErrorUser(true)
-        else {
-            setErrorUser(false)
-            if(passwordValue !== senha) setErrorPassword(true)
-            else setErrorPassword(false)
+        if (userValue !== usuario | passwordValue !== senha){
+            setErrorForm(true)
+        }else {
+            setErrorForm(false)
+            setSigned(true)
         }
     }
-    //executando validação e movendo para próxima página
+    //executando validação e movendo para página filmes
     function getAcess(){
-        if(errorUser === false && errorPassword === false){
-            setSigned(true)
-            navigate('/filmes')
-        } else return
+        if (errorForm === false){
+            navigate("/filmes")
+        }
     }
     
     return(
@@ -42,12 +40,11 @@ export const Formulario = () => {
             <TitlleForm>Faça o login</TitlleForm>
             <form onSubmit={getAcess()}>
                 <InputForm name='user' type='text' placeholder='Usuário' value={userValue} onChange={(e) => setUserValue(e.target.value)} />
-                {errorUser && (<Alert sx={{ p:'0 30px' }} variant="filled" severity="error">Usuário não encontrado</Alert>)}
-
                 <InputForm name='password' type='password' placeholder='Senha' value={passwordValue} onChange={(e) => setPasswordValue(e.target.value)}/>
-                {errorPassword && (<Alert sx={{ p:'0 30px' }} variant="filled" severity="error">Senha incorreta</Alert>)}
 
                 <Button type='submit' onClick={e => checkForm(e)}>Login</Button>
+
+                {errorForm && (<Alert sx={{ p:'0 30px', m:'20px 0' }} variant="filled" severity="error">Usuário ou Senha incorretos</Alert>)}
             </form>
         </FormContainer>
     )

@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const ContainerNoAcess = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -19,8 +20,4 @@ export const ContainerNoAcess = styled.div`
         max-width: 300px;
         margin: 20px 0;
     }
-`
-export const ContentNoAcess = styled.div`
-    max-width: 600px;
-    width: 100%;
 `
