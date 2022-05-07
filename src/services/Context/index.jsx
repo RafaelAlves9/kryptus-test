@@ -6,7 +6,7 @@ export const AuthProvider = ({children}) => {
     const [signed, setSigned] = useState(false)
 
     useEffect(()=> {
-        if (!localStorage.getItem("user")){
+        if (!localStorage.getItem("user") & signed === true){
             localStorage.setItem("user", "loged")
         } else return
     }, [signed])
