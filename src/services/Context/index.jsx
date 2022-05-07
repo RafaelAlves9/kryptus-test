@@ -3,12 +3,14 @@ import { createContext, useEffect, useState } from "react";
 export const AuthContext = createContext({})
 
 export const AuthProvider = ({children}) => {
-    const [signed, setSigned] = useState(false)
+    const [signed, setSigned] = useState(null)
 
     useEffect(()=> {
         if (!localStorage.getItem("user") & signed === true){
             localStorage.setItem("user", "loged")
-        } else return
+        }else if (localStorage.getItem("user") & signed === false){
+            localStorage.removeItem("user")
+        }
     }, [signed])
 
     return(
