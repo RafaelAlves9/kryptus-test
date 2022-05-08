@@ -40,10 +40,10 @@ export const Formulario = () => {
             <TitlleForm>Faça o login</TitlleForm>
             <form onSubmit={getAcess()}>
                 <InputForm name='user' type='text' placeholder='Usuário' value={userValue} onChange={(e) => setUserValue(e.target.value)} />
+
                 <InputForm name='password' type='password' placeholder='Senha' value={passwordValue} onChange={(e) => setPasswordValue(e.target.value)}/>
 
                 <Button type='submit' onClick={e => checkForm(e)}>Login</Button>
-
                 {errorForm && (<Alert sx={{ p:'0 30px', m:'20px 0' }} variant="filled" severity="error">Usuário ou Senha incorretos</Alert>)}
             </form>
         </FormContainer>
