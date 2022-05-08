@@ -20,8 +20,8 @@ export const Films = () => {
                 localStorage.setItem("api", JSON.stringify(res.data.results))
                 setApi(JSON.parse(localStorage.getItem("api")))
             })
-        } else setApi(JSON.parse(localStorage?.getItem("api")))
-    }, [signed])
+        } else setApi(JSON.parse(localStorage.getItem("api")))
+    }, [])
 
     function LogoutLogin(){
         setSigned(false)

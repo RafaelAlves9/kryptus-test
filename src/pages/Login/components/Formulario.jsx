@@ -10,7 +10,7 @@ export const Formulario = () => {
     const [passwordValue, setPasswordValue] = useState("");
     //estado de erro dos inputs
     const [errorForm, setErrorForm] = useState(null);
-    
+
     //estado global do login
     const {setSigned} = useAuth()
     //direcionamento para página Filmes
@@ -18,6 +18,7 @@ export const Formulario = () => {
     //variáveis de ambiente
     const usuario = "admin";
     const senha = "admin123!";
+
     //validação dos inputs
     function checkForm(e){
         e.preventDefault()
@@ -34,16 +35,17 @@ export const Formulario = () => {
             navigate("/filmes")
         }
     }
-    
+
     return(
         <FormContainer>
             <TitlleForm>Faça o login</TitlleForm>
             <form onSubmit={getAcess()}>
-                <InputForm name='user' type='text' placeholder='Usuário' value={userValue} onChange={(e) => setUserValue(e.target.value)} />
+                <InputForm name='user' type='text' placeholder='Usuário' value={userValue} onChange={(e) => setUserValue(e.target.value)}/>
 
                 <InputForm name='password' type='password' placeholder='Senha' value={passwordValue} onChange={(e) => setPasswordValue(e.target.value)}/>
 
                 <Button type='submit' onClick={e => checkForm(e)}>Login</Button>
+
                 {errorForm && (<Alert sx={{ p:'0 30px', m:'20px 0' }} variant="filled" severity="error">Usuário ou Senha incorretos</Alert>)}
             </form>
         </FormContainer>
