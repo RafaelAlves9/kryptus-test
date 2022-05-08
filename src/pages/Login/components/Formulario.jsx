@@ -25,12 +25,12 @@ export const Formulario = () => {
             setErrorForm(true)
         }else {
             setErrorForm(false)
+            setSigned(true)
         }
     }
     //executando validação e movendo para página filmes
     function getAcess(){
         if (errorForm === false){
-            setSigned(true)
             navigate("/filmes")
         }
     }
