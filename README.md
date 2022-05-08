@@ -1,14 +1,15 @@
 # 🚀 TESTE KRYPTUS - STAR WARS 🚀
 
 ## Descrição das Tecnologias
-- ReactJs, React-Router-Dom, API Context, Hooks (useNavigate, useState e useEffect), Styled-components, Material-UI e consumo de API com Axios.
+- ReactJs, React-Router-Dom, API Context, Localstorage, consumo de API com Axios, Hooks (useNavigate, useState e useEffect), Styled-components e Material-UI.
 
 ## Detalhes da Aplicação
-- O acesso a página "Filmes" está restrita aos usuários que fizerem Login, caso contrário serão redirecionados a uma página de erro.
+- O acesso a página "Filmes" está restrita aos usuários que fizerem Login, caso contrário serão redirecionados a uma página customizada de erro de acesso.
 - A checagem do Login é feita pela observação de um estado global por uma API Context.
-- Guardei as variáveis referentes ao Login em um arquivo .ENV que foram omitidas no GitIgnore, seguindo as boas prática.
+- O status de Login é guardado no Localstorage, para não ser "esquecido" se houver reload ou fechamento do navegador.
+- Os dados da API também são guardados no Localstorage, assim, uma vez consultada a api, os dados serão reutilizados sem a necessidade de novas requisições.
 - O site está 100% responsivo.
-- Separei o projeto por pastas estratégicas, agrupando componentes de valor semelhantes em cada uma.
+- Separei o projeto por pastas estratégicas, agrupando componentes de valor semelhante em cada uma.
 
 ## Acesso de Login
 - Usuário: "admin"
