@@ -10,7 +10,7 @@ import { useAuth } from '../../services/useContext'
 
 export const Films = () => {
     const [api, setApi] = useState();
-    const {setSigned, signed} = useAuth()
+    const {setSigned} = useAuth()
     const navigate = useNavigate()
 
     useEffect(() => {
