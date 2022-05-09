@@ -22,7 +22,7 @@ export const TitlleForm = styled.h1`
 `
 export const InputForm = styled.input`
     width: 90%;
-    height: 40px;
+    height: 50px;
     margin: 7px 0;
     padding: 0 10px;
     border: none;

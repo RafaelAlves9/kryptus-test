@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Section } from '../../components/GlobalStyled';
 import { Container, Button } from '@mui/material';
-import { Logout } from '@mui/icons-material';
+import { BorderAllOutlined, Logout } from '@mui/icons-material';
 import { ContentFilms, LogoutButton } from './styled';
 import { Card } from './components/Card';
 import axios from 'axios';
@@ -31,10 +31,10 @@ export const Films = () => {
     return (
         <Section>
             <LogoutButton>
-                <Button variant="outlined" onClick={() => LogoutLogin()}><Logout/>Logout</Button>
+                <Button variant="outlined" onClick={() => LogoutLogin()}><Logout />Logout</Button>
             </LogoutButton>
             <Container>
-                <h2 style={{margin:"20px 0"}}>Clique e saiba mais sobre os filmes!</h2>
+                <h2 style={{marginTop:"80px"}}>Clique e saiba mais sobre os filmes!</h2>
                 <ContentFilms>
                    {api?.map((i) => (
                             <Card
