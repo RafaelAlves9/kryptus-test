@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Section } from '../../components/GlobalStyled';
 import { Container, Button } from '@mui/material';
-import { BorderAllOutlined, Logout } from '@mui/icons-material';
+import { Logout } from '@mui/icons-material';
 import { ContentFilms, LogoutButton } from './styled';
 import { Card } from './components/Card';
 import axios from 'axios';
