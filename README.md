@@ -11,6 +11,9 @@
 - O site está 100% responsivo.
 - Separei o projeto por pastas estratégicas, agrupando componentes de valor semelhante em cada uma.
 
+## Figma
+- Link: https://www.figma.com/file/CYgPrEbEQAVY0ouHJGXor8/Kryptus-Test
+
 ## Acesso de Login
 - Usuário: "admin"
 - Senha: "admin123!"
